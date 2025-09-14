@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Gabriel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+
+  <header>
+    <h1>Gabriel 👨‍💻</h1>
+    <nav class="menu sticky">
+      <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <main>
+    <section id="sobre" class="fade-in">
+      <h2>Sobre Mim</h2>
+      <img src="ney-perfil.jpeg" alt="Foto de perfil Gabriel" class="perfil">
+      <p><span id="typing"></span></p>
+
+      <h3>Habilidades</h3>
+      <ul>
+        <li><a href="https://www.guiadacarreira.com.br/blog/trabalho-em-equipe" target="_blank">⚡ Trabalho em Equipe</a>
+        <li><a href="https://www.mpf.mp.br/servicos/lgpd/o-que-e-a-lgpd" target="_blank">🚀 Lei LGPD</a></li>
+        <li><a href="https://mercadoonlinedigital.com/blog/crud/" target="_blank">📱 Fazer um CRUD</a></li>
+      </ul>
+
+      <h3>Tabela de Níveis</h3>
+      <table>
+        <tr>
+          <th>Habilidade em Linguagem</th>
+          <th>Nível</th>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Avançado</td>
+        </tr>
+        <tr>
+          <td>PHP</td>
+          <td>Intermediário</td>
+        </tr>
+        <tr>
+          <td>C#</td>
+          <td>Intermediário</td>
+        </tr>
+      </table>
+
+      <div class="skills">
+        <div class="skill">
+          <span>C</span>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="90"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>PHP</span>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="70"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>C#</span>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="70"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="fade-in">
+      <h2>Projetos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="logopoli.png" alt="Projeto 1">
+          <h3>Quiz interativo</h3>
+          <p>Um quiz experimental com animações fluidas e interações modernas.</p>
+        </div>
+        <div class="card">
+          <img src="jogo-ifes.jpeg" alt="Projeto 2">
+          <h3>Experiência Interativa</h3>
+          <p>Aplicação criativa que une design e código em harmonia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="fade-in">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" rows="5"></textarea>
+
+        <button type="submit">Enviar 🚀</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gabriel | Criado com ☕</p>
+    <div class="social">
+      <a href="https://github.com/7Gabriel72" target="_blank">🐙 GitHub</a>
+      <a href="https://br.linkedin.com/in/gabriel-barros-de-almeida-908911208" target="_blank">💼 LinkedIn</a>
+      <a href="mailto:fxgabrielmarques@gmail.com">📧 E-mail</a>
+    </div>
+  </footer>
+
+  <button id="btnTopo">⬆</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Project Details</h2>
+      <p id="modal-text">More details about the project will appear here.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
